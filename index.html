@@ -14,10 +14,14 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/0fc40ccc3c.js" crossorigin="anonymous"></script>
     <style>
+      .font-adlam {
+          font-family: "ADLaM Display", serif;
+          font-style: normal;
+}
 
     </style>
 </head>
-<body class="mx-10">
+<body class="mx-10 font-adlam">
     <header>
         <nav class="">
           <div class="navbar bg-[#FFF9F4]">
@@ -46,18 +50,20 @@
                 </ul>
               </div>
               <img src="./assets/logo-header.png" alt="">
-              <a class="btn btn-ghost text-xl">Browse4Pets</a>
+              <a class="btn btn-ghost text-xl hidden md:flex">Browse4Pets</a>
             </div>
-            <div class="navbar-center hidden lg:flex">
+            <div class="navbar-center  hidden lg:flex">
               <ul class="menu menu-horizontal px-1">
                 <li><a>Find a pet</a></li>
                   <li><a>Breeds</a></li>
                   <li><a>Contact us</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
-              <a class="btn btn-outline btn-warning px-2">Login</a>
-              <a class="btn bg-[#FFDC26] px-3">Register</a>
+            <div class="navbar-end w-[300px] gap-2 hidden md:flex">
+              <i class="fa-solid fa-bell text-2xl"></i>
+              <i class="fa-solid fa-smagnifying-glass text-2xl"></i>
+              <a class="btn btn-outline btn-warning px-4">Login</a>
+              <a class="btn bg-[#FFDC26] px-6">Register</a>
             </div>
           </div>
         </nav>
@@ -65,7 +71,7 @@
     <main class="">
         <!-- banner area -->
         <section>
-            <div class="banner  ">
+            <div class="banner mt-5  ">
                 <div class="banner-content max-w-[600px]  ">
                   <h1 class="font-bold text-6xl">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
                   <p class="text-xl my-5">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
